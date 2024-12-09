@@ -86,9 +86,9 @@ async function main() {
 }
 
 
-let port=3000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(port,()=>{
+app.listen(port,"0.0.0.0",()=>{
     console.log(`reporting from the port number ${port}`);
 });
 
